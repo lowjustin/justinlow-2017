@@ -5,12 +5,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+  <title><?= $page->title() ?> | <?= $site->title() ?></title>
 
-  <meta name="author" content="<?= $site->author()->html() ?>">
+  <meta name="author" content="<?= $site->author() ?>">
   <meta name="copyright" content="<?= $site->copyright() ?>">
-  <meta name="description" content="<?= $site->description()->html() ?>">
-  <meta name="keywords" content="<?= $site->keywords()->html() ?>,<?= $page->tags()->html() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>,<?= $page->tags() ?>">
   <?
   /*
   <meta name="description" content="<?= $site->description()->html() ?>">
@@ -18,10 +18,10 @@
   <!-- <meta name="google-site-verification" content="jFkfiYryzUm8MbHI4aN3O7OWeHX1j7ioE6198JPXuS8" /> -->
   */ ?>
 
-  <meta property="og:title" content="<?= $page->title()->html() ?>">
-  <meta property="og:site_name" content="<?= $site->title()->html() ?>"/>
+  <meta property="og:title" content="<?= $page->title() ?>">
+  <meta property="og:site_name" content="<?= $site->title() ?>"/>
   <meta property="og:url" content="<?= $page->url() ?>">
-  <meta property="og:description" content="<?= $page->excerpt()->html() ?>">
+  <meta property="og:description" content="<?= $page->excerpt() ?>">
   <meta property="og:type" content="article" />
   <meta property="article:author" content="https://www.facebook.com/low.justin" />
   <? if ($image = $page->files()->sortBy('Sort')->first()): ?>
