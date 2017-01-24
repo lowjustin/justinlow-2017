@@ -1,8 +1,8 @@
-<? snippet('status', array('page' => $page)) ?>
+<? snippet('status') ?>
 
 <article>
-  <h1><?= $page->title()->html() ?></h1>
+  <h1><?= $page->title() ?></h1>
   <?= $page->text()->kirbytext() ?>
 </article>
 
-<? snippet('related-pages', array('page' => $page)) ?>
+<? snippet('related-pages') ?>
