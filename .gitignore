@@ -46,3 +46,12 @@ Icon
 # License
 # ---------------
 /site/config/.license
+
+# Configuration files
+# ---------------
+/site/config/config.php
+
+# Backup files
+# ---------------
+*.bak
+*.bk*
