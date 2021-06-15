@@ -1,17 +1,10 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Articles - Item
+
+preset: page
+
 pages: false
-files:
-  sortable: true
-  fields:
-    alt:
-      label: Alt Text
-      type:  text
+
 fields:
-  title:
-    label: Title
-    type:  text
   date:
     label: Date
     type: date
