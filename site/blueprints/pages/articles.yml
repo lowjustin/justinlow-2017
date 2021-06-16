@@ -1,3 +1,6 @@
 title: Articles - List
 
 preset: pages
+
+listed:
+  flip: true

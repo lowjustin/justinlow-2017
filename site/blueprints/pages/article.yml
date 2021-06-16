@@ -10,6 +10,7 @@ fields:
     type: date
     width: 1/2
     default: today
+    
   status:
     label: Status
     type:  select
@@ -19,12 +20,15 @@ fields:
       draft: Draft
       live: Live
     width: 1/2
+    
   text:
     label: Text
     type:  textarea
+    
   excerpt:
     label: Excerpt
     type:  textarea
+    
   tags:
     label: Tags
     type:  tags
