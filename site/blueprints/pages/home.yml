@@ -1,0 +1,25 @@
+title: Home
+
+preset: page
+
+pages: false
+
+fields:
+  text:
+    label: Text
+    type:  textarea
+
+  hero:
+    label: Hero article
+    type: pages
+    multiple: false
+
+  articles:
+    label: Articles page
+    type: pages
+    multiple: false
+
+  number_cards:
+    label: Number of cards
+    type: number
+  
