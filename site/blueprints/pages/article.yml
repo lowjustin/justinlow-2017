@@ -20,6 +20,12 @@ fields:
       draft: Draft
       live: Live
     width: 1/2
+
+  coverimage:
+    label: Cover image
+    type: files
+    query: page.images
+    multiple: false
     
   text:
     label: Text

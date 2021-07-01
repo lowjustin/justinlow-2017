@@ -22,4 +22,3 @@ fields:
   number_cards:
     label: Number of cards
     type: number
-  
