@@ -11,12 +11,7 @@ $data = [
     'text'  => $page->text()->kirbytext()->value(),
     'items' => $items
   ],
-  'site_data' => [
-    'title' => $page->title()->value() . " | " . $site->title()->html()->value(),
-    'description' => $site->description()->html()->value(),
-    'keywords' => $site->keywords()->html()->value(),
-    'copyright' => $site->copyright()->kirbytextinline()->value(),
-  ],
+  'site_data' => $page->site_data(),
 ];
 
 echo json_encode($data);

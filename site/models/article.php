@@ -1,6 +1,8 @@
 <?php
 
-class ArticlePage extends Page {
+require_once 'default.php';
+
+class ArticlePage extends DefaultPage {
   public function data_card() {
     $thumb = false;
     if ($thumb = $this->coverimage()->toFile()) {
@@ -11,9 +13,9 @@ class ArticlePage extends Page {
       'id' => $this->id(),
       'slug' => $this->slug(),
       'thumb' => $thumb,
-      'title' => $this->title()->value(),
-      'date' => $this->date()->value(),
-      'status' => $this->content()->status()->value(),
+      'title' => $this->title()->html()->value(),
+      'date' => $this->date()->html()->value(),
+      'status' => $this->content()->status()->html()->value(),
       'excerpt'  => $this->content()->excerpt()->value(),
       'link' => [
         'label' => 'Read more',
@@ -22,7 +24,7 @@ class ArticlePage extends Page {
     ];
   }
 
-  public function data_article() {
+  public function page_data() {
     $thumb = false;
     $coverimage = false;
     if ($coverimage = $this->coverimage()->toFile()) {
@@ -38,7 +40,7 @@ class ArticlePage extends Page {
       'title' => $this->title()->html()->value(),
       'text' => $this->text()->kirbytext()->value(),
       'date' => $this->date()->html()->value(),
-      'status' => $this->content()->status()->value(),
+      'status' => $this->content()->status()->html()->value(),
       'excerpt' => $this->content()->excerpt()->value(),
     ];
   }
