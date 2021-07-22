@@ -1,10 +1,5 @@
 <?php
 
-$items = false;
-foreach ($page->children()->listed()->flip() as $item) {
-  $items[] = $item->data_card();
-}
-
 $data = [
   'page_data' => [
     'title' => $page->title()->value(),
