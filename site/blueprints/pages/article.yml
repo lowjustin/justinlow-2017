@@ -1,4 +1,4 @@
-title: Articles - Item
+title: Article
 
 preset: page
 
@@ -13,13 +13,25 @@ fields:
     
   status:
     label: Status
-    type:  select
+    type: select
     default: draft
     options:
       archived: Archived
       draft: Draft
       live: Live
     width: 1/2
+
+  categories:
+    label: Categories
+    type: tags
+    options: query
+    query: page.siblings.pluck("categories", ",", true)
+
+  tags:
+    label: Tags
+    type: tags
+    options: query
+    query: page.siblings.pluck("tags", ",", true)
 
   coverimage:
     label: Cover image
